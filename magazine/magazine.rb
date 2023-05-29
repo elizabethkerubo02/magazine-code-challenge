@@ -1,6 +1,6 @@
 class Magazine
     attr_accessor :name, :category
-    @@ll = []
+    @@all = []
 
     def initialize(name,category)
         @name = name
