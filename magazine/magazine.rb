@@ -16,4 +16,8 @@ class Magazine
         Article.all.filter{|article| article.magazine.name==@name}
     end
 
+    def magazine_authors
+        magazine_articles.map{|article| article.author}
+    end
+
 end
