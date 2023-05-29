@@ -12,4 +12,8 @@ class Magazine
         @@all
     end
 
+    def magazine_articles
+        Article.all.filter{|article| article.magazine.name==@name}
+    end
+
 end
