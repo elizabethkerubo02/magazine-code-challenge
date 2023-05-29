@@ -12,4 +12,8 @@ class author
         article.map{|article| articles.magazine}.uniq 
     end
 
+    def add_articles(magazine,title)
+        Article.new(self,magazine,title)
+    end
+
 end
