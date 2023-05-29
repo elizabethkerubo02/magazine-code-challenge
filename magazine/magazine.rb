@@ -19,5 +19,8 @@ class Magazine
     def magazine_authors
         magazine_articles.map{|article| article.author}
     end
+    def contributors
+        magazine_authors.uniq
+    end
 
 end
